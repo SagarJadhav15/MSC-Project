@@ -669,8 +669,16 @@ header .icons #menu-bars{
 }
 
 
-
-
+.inputRadioSpan{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.inputRadioSpan > input{
+    width: auto !important;
+    margin-right: 10px;
+    margin-bottom: 0 !important;
+}
 
 
 
