@@ -262,11 +262,17 @@ function renderAsses(){
   })
   
 }
+function addAllItemsToStorage(){
+  let getAllStorageProducts = localStorage.getItem('listOfProducts')
+  if(!getAllStorageProducts)
+    localStorage.setItem('listOfProducts', JSON.stringify(listOfProducts))
+}
 function fadeOut(){
   // setInterval(loader, 3000);
   renderProducts();
   renderAsses();
-  localStorage.setItem('listOfProducts', listOfProducts)
+  addAllItemsToStorage();
+  
 }
 
 window.onload = fadeOut;
