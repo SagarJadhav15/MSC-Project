@@ -1,4 +1,4 @@
-let listOfProducts = [
+const listOfProducts = [
   {
     id: 1,
     title: "Acer",
@@ -63,11 +63,11 @@ let listOfProducts = [
     type: 'asses'
   },
 ]
-let listOfAsses = listOfProducts.filter(item => item.type === "asses")
-var cartVisible = false;
-var cartItems = [];
+const listOfAsses = listOfProducts.filter(item => item.type === "asses")
+let cartVisible = false;
+let cartItems = [];
 // Check if there are any cart items stored in localStorage
-var storedCartItems = localStorage.getItem("cartItems");
+let storedCartItems = localStorage.getItem("cartItems");
 if (storedCartItems) {
     try {
         cartItems = JSON.parse(storedCartItems);
@@ -165,7 +165,7 @@ var alertQueue = []; // Queue to store the alert messages
 function showAlert(message) {
     alertQueue.push(message); // Add the message to the queue
 
-    if (!document.getElementById("alert").classList.contains("show")) {
+    if (document.getElementById("alert") && !document.getElementById("alert").classList.contains("show")) {
         displayNextAlert();
     }
 }
@@ -190,7 +190,7 @@ function displayNextAlert() {
         }, 3000); // Time for each alert to be displayed
     }
 }
-function addToCart(data) {
+async function addToCart(data) {
   let obj = listOfProducts.find(item => item.id === data);
   if(obj){
     showAlert("Added to cart successfully!");
@@ -199,6 +199,11 @@ function addToCart(data) {
   }
 
 }
+async function addToCartSelectively(productName){
+  let obj = listOfProducts.find(item => item.title === productName);
+  if(obj)addToCart(obj.id)
+}
+
 function renderProducts(){
   let html = `        <div class="box">
   <a href="#" class="fas fa-heart"></a>
@@ -217,7 +222,7 @@ function renderProducts(){
   </span>
   <button onclick="addToCart(%pd%)" class="btn">add to cart</button>
 </div>`;
-
+if(document.getElementById('product-lists')){
   listOfProducts.forEach(item => {
     let newHTML = html.replace('%filePath%', item.filePath);
     newHTML = newHTML.replace('%imageSrc%', item.imageSrc);
@@ -227,6 +232,8 @@ function renderProducts(){
     newHTML = newHTML.replace('%pd%', item.id);
     document.getElementById('product-lists').insertAdjacentHTML('beforeend', newHTML);
   })
+}
+
   
 }
 // function loader(){
@@ -250,7 +257,7 @@ function renderAsses(){
   </span>
   <button onclick="addToCart(%pd%)" class="btn">add to cart</button>
 </div>`;
-
+if(document.getElementById('product-asses-lists')){
   listOfAsses.forEach(item => {
     let newHTML = html.replace('%filePath%', item.filePath);
     newHTML = newHTML.replace('%imageSrc%', item.imageSrc);
@@ -260,7 +267,7 @@ function renderAsses(){
     newHTML = newHTML.replace('%pd%', item.id);
     document.getElementById('product-asses-lists').insertAdjacentHTML('beforeend', newHTML);
   })
-  
+  }
 }
 function addAllItemsToStorage(){
   let getAllStorageProducts = localStorage.getItem('listOfProducts')
