@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Complete Responsive Food Website Design Tutorial</title>
-    
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    
+
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
+
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="css/style1.css",>
+    <link rel="stylesheet" href="css/style1.css" ,>
 </head>
+
 <body>
     <header>
-    
+
         <a href="#" class="logo"><i class="fas fa-laptop "></i>.</a>
-    
+
         <nav class="navbar">
             <a href="fffffffffff.html#home">home</a>
             <a href="fffffffffff.html#laptop">laptop & computer</a>
@@ -27,36 +29,37 @@
             <a href="fffffffffff.html#review">review</a>
             <a class="active" href="#order">order</a>
         </nav>
-    
+
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
             <a href="#" class="fas fa-heart"></a>
             <a href="cart.html" class="fas fa-shopping-cart" data-toggle="modal" data-target="#cart"></a>
         </div>
-    
+
 
     </header>
-<!-- order section starts  -->
+    <!-- order section starts  -->
 
-<section class="order" id="order">
+    <section class="order" id="order">
 
-    <br><br><br><h3 class="sub-heading"> order now </h3>
-    <h1 class="heading"> free and fastest  delivery</h1>
+        <br><br><br>
+        <h3 class="sub-heading"> order now </h3>
+        <h1 class="heading"> free and fastest delivery</h1>
 
-    <form action="">
+        <form action="">
 
-        <div class="inputBox">
-            <div class="input">
-                <span>your name</span>
-                <input type="text" placeholder="enter your name">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name">
+                </div>
+                <div class="input">
+                    <span>your mobile number</span>
+                    <input type="number" placeholder="enter your number">
+                </div>
             </div>
-            <div class="input">
-                <span>your mobile number</span>
-                <input type="number" placeholder="enter your number">
-            </div>
-        </div>
-        <div class="inputBox">
+            <!-- <div class="inputBox">
             <div class="input">
                 <span>your order</span>
                 <input type="text" placeholder="enter laptop name">
@@ -65,35 +68,46 @@
                 <span>additional laptop or computer</span>
                 <input type="test" placeholder="extra new company laptop">
             </div>
-        </div>
-        <div class="inputBox">
-            <div class="input">
-                <span>how musch loptop you buy </span>
-                <input type="number" placeholder="how many orders">
+        </div> -->
+            <div class="inputBox">
+                <div class="input">
+                    <span>how musch loptop you buy </span>
+                    <input type="number" placeholder="how many orders">
+                </div>
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local">
+                </div>
             </div>
-            <div class="input">
-                <span>date and time</span>
-                <input type="datetime-local">
+            <div class="inputBox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" id="" cols="30" rows="5"></textarea>
+                </div>
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" placeholder="enter your message" id="" cols="30" rows="5"></textarea>
+                </div>
             </div>
-        </div>
-        <div class="inputBox">
-            <div class="input">
-                <span>your address</span>
-                <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Select Payment Method</span>
+                    <div class="inputRadioSpan">
+                        <input type="radio" name="CashOnDelivery" value="paymentCash" id="paymentCash" />
+                        <label for="paymentCash">Cash On Delivery</label>
+                    </div>
+                </div>
+
             </div>
-            <div class="input">
-                <span>your message</span>
-                <textarea name="" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            <div class="inputBox">
+                <input type="submit" value="order now" class="btn">
             </div>
-        </div>
+        </form>
 
-        <input type="submit" value="order now" class="btn">
+    </section>
 
-    </form>
-
-</section>
-
-<!-- order section ends -->
+    <!-- order section ends -->
 
 </body>
+
 </html>

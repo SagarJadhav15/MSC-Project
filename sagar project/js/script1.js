@@ -1,4 +1,4 @@
-let listOfProducts = [
+const listOfProducts = [
   {
     id: 1,
     title: "SMART PACK Hand Sealer Machine",
@@ -176,10 +176,10 @@ let listOfProducts = [
 ]
 let listOfAsses = listOfProducts.filter(item => item.type === "asses")
 let listOflaptops = listOfProducts.filter(item => item.type === "product")
-var cartVisible = false;
-var cartItems = [];
+let cartVisible = false;
+let cartItems = [];
 // Check if there are any cart items stored in localStorage
-var storedCartItems = localStorage.getItem("cartItems");
+let storedCartItems = localStorage.getItem("cartItems");
 if (storedCartItems) {
     try {
         cartItems = JSON.parse(storedCartItems);
@@ -277,7 +277,7 @@ var alertQueue = []; // Queue to store the alert messages
 function showAlert(message) {
     alertQueue.push(message); // Add the message to the queue
 
-    if (!document.getElementById("alert").classList.contains("show")) {
+    if (document.getElementById("alert") && !document.getElementById("alert").classList.contains("show")) {
         displayNextAlert();
     }
 }
@@ -302,7 +302,7 @@ function displayNextAlert() {
         }, 3000); // Time for each alert to be displayed
     }
 }
-function addToCart(data) {
+async function addToCart(data) {
   let obj = listOfProducts.find(item => item.id === data);
   if(obj){
     showAlert("Added to cart successfully!");
@@ -311,6 +311,11 @@ function addToCart(data) {
   }
 
 }
+async function addToCartSelectively(productName){
+  let obj = listOfProducts.find(item => item.title === productName);
+  if(obj)addToCart(obj.id)
+}
+
 function renderProducts(){
   let html = `        <div class="box">
   <a href="#" class="fas fa-heart"></a>
@@ -340,8 +345,10 @@ listOflaptops.forEach(item => {
     newHTML = newHTML.replace('%pd%', item.id);
     document.getElementById('product-lists').insertAdjacentHTML('beforeend', newHTML);
   })
-  
 }
+
+  
+
 // function loader(){
 //   document.querySelector('.loader-container').classList.add('fade-out');
 // }
@@ -363,7 +370,7 @@ function renderAsses(){
   </span>
   <button onclick="addToCart(%pd%)" class="btn">add to cart</button>
 </div>`;
-
+if(document.getElementById('product-asses-lists')){
   listOfAsses.forEach(item => {
     let newHTML = html.replace('%filePath%', item.filePath);
     newHTML = newHTML.replace('%imageSrc%', item.imageSrc);
@@ -373,13 +380,19 @@ function renderAsses(){
     newHTML = newHTML.replace('%pd%', item.id);
     document.getElementById('product-asses-lists').insertAdjacentHTML('beforeend', newHTML);
   })
-  
+  }
+}
+function addAllItemsToStorage(){
+  let getAllStorageProducts = localStorage.getItem('listOfProducts')
+  if(!getAllStorageProducts)
+    localStorage.setItem('listOfProducts', JSON.stringify(listOfProducts))
 }
 function fadeOut(){
   // setInterval(loader, 3000);
   renderProducts();
   renderAsses();
-  localStorage.setItem('listOfProducts', listOfProducts)
+  addAllItemsToStorage();
+  
 }
 
 window.onload = fadeOut;
