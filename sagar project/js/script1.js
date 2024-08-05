@@ -1,37 +1,34 @@
 let listOfProducts = [
   {
     id: 1,
-    title: "Acer",
-    subTitle: `Acer Nitro 5 AN515-45 Gaming Laptop, AMD Ryzen 7 5800H (8-Core) | NVIDIA GeForce RTX 3060 Laptop Graphics |15.6" QHD 165Hz IPS Display | 16GB DDR4 | 256GB SSD | 1TB HDD| WiFi 6 | RGB Backlit Keyboard`,
-    description: `Dominating Performance : Conquer games and tasks alike, powered by an AMD Ryzen 7 5800H Mobile Processor, run your most demanding apps all at once with lightning-fast responsiveness. Experience hyper-efficient battery life thanks to industry-leading technology that keeps you productive and entertained from anywhere.
-    The NVIDIA GeForce RTX 3060 laptop GPU is powered by the award-winning Ampere architecture—NVIDIA’s 2nd gen RTX—with new Ray Tracing Cores, Tensor Cores, & streaming multiprocessors for the most realistic ray-traced graphics & cutting-edge AI features. The ultimate performance for gamers & creators.
-    Made for Speed : Explore games in greater detail with the sharp visuals of a 15.6” FHD 1920 x 1080 IPS display with 144Hz refresh rate, improved screen-to-body ratio to 80% with narrow bezels. Its hard-edged sleek lines evoke the gaming spirit of the Acer Nitro 5. The Nitro 5 looks and feels like it will help you take control.
-    Cooling Perfected : When heavy use requires an added boost, chill out with twin fans, Acer CoolBoost technology and quad exhaust port design. CoolBoost will also help monitor fan speed and increase when necessary to optimize total performance. Monitor and manage your system in real time with NitroSense, covering temperatures, fan speeds and more`,
-    imageSrc: 'images1/lap-1.jpg',
-    price: 69000,
-    filePath: 'product acer.html',
+    title: "SMART PACK Hand Sealer Machine",
+    subTitle: `Impulse Heating Technology: This feature ensures that the machine uses power only during the sealing process, Ideal for thermoplastic materials polyethylene and polypropylene.`,
+    description: ``,
+    imageSrc: 'images1/SP10.jpg',  
+    price: 2670,
+    filePath: 'SMART PACK Hand Sealer Machine.html',
     type: 'product'
 
   },
   {
     id: 2,
-    title: "HP Chromebook",
-    subTitle: `HP Chromebook x360 AMD 3015CE-4GB SDRAM/64GB eMMC Storage 14-inch (35.56 cm) Thin & Light 2-in-1 Laptop (Chrome OS/Backlit Keyboard/ AMD Radeon Graphics/Google Assistant/1.49 kg), 14a-cb0007AU`,
+    title: "12 inches Premium Sealer Machine",
+    subTitle: `12 inches Premium Range Metal Heavy Duty Heat Sealer Machine, Heat Sealer for Plastic Bag 12" inch, Impulse Sealer, Impulse Sealer Machine, Packing Machine (Orange).`,
     description: `Google Assistant: Voice-Enabled Google Assistant built-in, work faster and smarter without lifting a finger or switching screens. Ask questions, set reminders, play videos, control your home, and more. Make Google do it. Audio features : Dual speakers
     Boots in Seconds: Powered by Chrome OS with automatic software updates so you'll always have the latest virus protection. It starts up in less than 10 seconds, stays fast throughout the day, and wonât slow down over time
     Touch Screen: Reach out and control your PC with just a touch. Pinch, zoom, tap, and swipe right from the screen
     Microsoft Office compatible: With access to Microsoft Word, Excel, and Powerpoint from the Google Play Store, you can be confident that your Chromebook will allow you to use the productivity software you need
     Hassle-free device: Secure updates in the background deliver new fixes and features and enhanced experiences.
     Processor: AMD 3015Ce (up to 2.3 GHz max boost clock, 4 MB L3 cache, 2 cores, 4 threads) with AMD Radeon Graphics`,
-    imageSrc: 'images1/lap-2.jpg',
-    price: 63900,
+    imageSrc: 'images1/SP12.jpg',
+    price: 1200,
     filePath: 'product hp.html',
     type: 'product'
   },
   {
     id: 3,
-    title: "Dell Gaming Laptop",
-    subTitle: `Dell 15 (2021) I5-10200H Gaming Laptop, 8Gb RAM, 512Gb SSD, 15.6” (39.62 Cms) FHD 120Hz 250 Nits Display, NVIDIA GTX 1650 4GB Graphics, Win 10, Ascent Solid Color (G15 5510, D560452WIN9A)`,
+    title: "12 Inch 300mm Sealing",
+    subTitle: `Inch 300mm Impulse Sealer Heavy Duty Electric Heat Sealing Machine for Plastic Bags - Durable Metal Body (PFS-300 MT)`,
     description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
     Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
     Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
@@ -40,15 +37,16 @@ let listOfProducts = [
     Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
     I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
     Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
-    imageSrc: 'images1/lap-3.jpg',
-    price: 86000,
+    imageSrc: 'images1/SP13.jpg',
+    price: 1499,
     filePath: 'product dell gaming.html',
     type: 'product'
   },
   {
     id: 4,
-    title: "Charger Dell",
-    subTitle: `Dell Charger (2021) I5-10200H Gaming Laptop, 8Gb RAM, 512Gb SSD, 15.6” (39.62 Cms) FHD 120Hz 250 Nits Display, NVIDIA GTX 1650 4GB Graphics, Win 10, Ascent Solid Color (G15 5510, D560452WIN9A)`,
+    title: "Impulse Sealer Machine",
+    subTitle: `12 inches Metal Premium Range Heavy Duty Heat Sealer Machine, Heat Sealer for Plastic Bag 12" inch, Impulse Sealer,
+                 Impulse Sealer Machine, Packing Machine (Red)`,
     description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
     Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
     Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
@@ -57,13 +55,127 @@ let listOfProducts = [
     Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
     I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
     Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
-    imageSrc: 'images1/lap-3.jpg',
-    price: 186000,
+    imageSrc: 'images1/SP14.jpg',
+    price: 1234,
+    filePath: 'product dell gaming.html',
+    type: 'product'
+  },
+  {
+    id: 5,
+    title: "SMART PACK 30 INCH Sealer",
+    subTitle: `SMART PACK Impulse Type Hand Sealer Machine for Silver, LD, PP, HM and Laminated Pouches Sealing 
+                | Pouch Packing Machine | Heat Sealer | Plastic Sealer | Pack of 1 Size 30 INCH`,
+    description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
+    Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
+    Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
+    Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology
+    Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription
+    Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
+    I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
+    Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
+    imageSrc: 'images1/SP15.png',
+    price: 17479,
+    filePath: 'product dell gaming.html',
+    type: 'product'
+  },
+
+  {
+    id: 6,
+    title: "Semi-Automatic SP TSS H",
+    subTitle: `The SP TSS H Band Sealing is a powerful and reliable sealing machine for industrial applications. It is designed to provide a secure seal for a wide 
+                range of materials. It has a powerful 650 watt motor and a 220 volt voltage for consistent performance.`,
+    description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
+    Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
+    Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
+    Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology
+    Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription
+    Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
+    I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
+    Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
+    imageSrc: 'images1/SP16.webp',
+    price: 16000,
+    filePath: 'product dell gaming.html',
+    type: 'product'
+  },
+
+  {
+    id: 7,
+    title: "Continuous Sealing Machine",
+    subTitle: `This continuous sealer is suitable for bags with thickness of 0.02-0.80 MM, Sealing Speed: 0-16 m/min. 
+                This sealing machine fits different seal assembly lines with its stable and efficient performance.`,
+    description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
+    Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
+    Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
+    Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology
+    Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription
+    Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
+    I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
+    Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
+    imageSrc: 'images1/sp17.jpg',
+    price: 17999,
+    filePath: 'product dell gaming.html',
+    type: 'product'
+  },
+
+  {
+    id: 8,
+    title: "Foot Sealer, 500SPS",
+    subTitle: `The Smart Pack 600W Impulse Type Foot Sealer is a versatile and easy-to-use packaging machine that is perfect for a variety of applications. 
+                With its 600W power rating, it can handle a variety of materials with ease.`,
+    description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
+    Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
+    Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
+    Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology
+    Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription
+    Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
+    I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
+    Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
+    imageSrc: 'images1/sp17.jpg',
+    price: 7390,
+    filePath: 'product dell gaming.html',
+    type: 'product'
+  },
+
+  {
+    id: 1,
+    title: "Foot Sealer, 500SPS",
+    subTitle: `The Smart Pack 600W Impulse Type Foot Sealer is a versatile and easy-to-use packaging machine that is perfect for a variety of applications. 
+                With its 600W power rating, it can handle a variety of materials with ease.`,
+    description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
+    Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
+    Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
+    Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology
+    Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription
+    Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
+    I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
+    Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
+    imageSrc: 'images1/sp17.jpg',
+    price: 7390,
+    filePath: 'product dell gaming.html',
+    type: 'asses'
+  },
+
+  {
+    id: 2,
+    title: "Continuous Sealing Machine",
+    subTitle: `This continuous sealer is suitable for bags with thickness of 0.02-0.80 MM, Sealing Speed: 0-16 m/min. 
+                This sealing machine fits different seal assembly lines with its stable and efficient performance.`,
+    description: `Free upgrade to Windows 11 when available. Disclaimer-Upgrade rollout plan is being finalized and is scheduled to begin late in 2021 and continue into 2022. Specific timing will vary by device
+    Processor:10th Generation Intel Core i5-10200H (8MB Cache, up to 4.1 GHz, 4 cores), Memory & Storage:8GB, 8Gx1, DDR4, 2933MHz | 512GB M.2 PCIe NVMe Solid State Drive
+    Display:15.6 inch FHD (1920 x 1080) 120Hz 250 nits WVA Anti- Glare LED Backlit Narrow Border Display
+    Graphics:NVIDIA GeForce GTX 1650 4GB GDDR6 | Game Shift Technology
+    Operating System & Software:Windows 10 Home Plus Single Language | McAfee Security Center 15 month subscription
+    Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
+    I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
+    Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
+    imageSrc: 'images1/sp17.jpg',
+    price: 17999,
     filePath: 'product dell gaming.html',
     type: 'asses'
   },
 ]
 let listOfAsses = listOfProducts.filter(item => item.type === "asses")
+let listOflaptops = listOfProducts.filter(item => item.type === "product")
 var cartVisible = false;
 var cartItems = [];
 // Check if there are any cart items stored in localStorage
@@ -203,7 +315,7 @@ function renderProducts(){
   let html = `        <div class="box">
   <a href="#" class="fas fa-heart"></a>
   <a href="%filePath%" class="fas fa-eye"></a>
-  <img src="%imageSrc%" alt="">
+   <a href="%productPath%"> <img src="%imageSrc%"></a>
   <h3>%title%</h3>
   <p>%subTitle%</p>
   <div class="stars">
@@ -218,8 +330,9 @@ function renderProducts(){
   <button onclick="addToCart(%pd%)" class="btn">add to cart</button>
 </div>`;
 
-  listOfProducts.forEach(item => {
+listOflaptops.forEach(item => {
     let newHTML = html.replace('%filePath%', item.filePath);
+    newHTML = newHTML.replace('%productPath%', item.filePath);
     newHTML = newHTML.replace('%imageSrc%', item.imageSrc);
     newHTML = newHTML.replace('%title%', item.title);
     newHTML = newHTML.replace('%subTitle%', item.subTitle);
