@@ -140,7 +140,7 @@ Easy to Instalation, follow intruction images
 Suitable for 12" inches (300 mm) Heat Sealing Machine
 10 Elements and 10 Teflon Cloth
 Easy to Replace follow to image instruction`,
-    imageSrc: 'images1/sp25.jpg',
+    imageSrc: 'images1/SP26.jpg',
     price: 525,
     filePath: 'A1.html',
     type: 'asses'
@@ -155,7 +155,7 @@ Easy to Replace follow to image instruction`,
                 Output - 24V AC; Ampere - 2A; Step Down Centre Tapped Transformer
                 Used for variety of applications like Projects , Object counters , Obsticle detector , Sensor circuits , Fire alarms etc
                 Package Include: 1 x 24V 2A 24-0-24 Transformer`,
-    imageSrc: 'images1/sp28.jpg',
+    imageSrc: 'images1/SP29.jpg',
     price: 620,
     filePath: 'A2.html',
     type: 'asses'
