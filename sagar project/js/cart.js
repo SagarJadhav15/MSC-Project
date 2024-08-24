@@ -77,7 +77,7 @@ function updateCart() {
         detailsContainer.appendChild(productName);
 
         var productPrice = document.createElement("span");
-        productPrice.textContent = "$" + cartItems[i].price + ".00";
+        productPrice.textContent = "₹" + cartItems[i].price + ".00";
         detailsContainer.appendChild(productPrice);
         total = total + cartItems[i].price;
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Complete Responsive Food Website Design Tutorial</title>
+    <title></title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -19,13 +19,13 @@
 <body>
     <header>
 
-        <a href="#" class="logo"><i class="fas fa-laptop "></i>.</a>
+        <a href="fffffffffff.html#home" class="logo"><img src="images1/LOGO.png" height="100" width="150"></a>
 
         <nav class="navbar">
             <a href="fffffffffff.html#home">home</a>
-            <a href="fffffffffff.html#laptop">laptop & computer</a>
+            <a href="fffffffffff.html#laptop">Pack seal & Sealing Machine</a>
             <a href="fffffffffff.html#about">about</a>
-            <a href="fffffffffff.html#menu">laptop accessories</a>
+            <a href="fffffffffff.html#menu">Machine accessories</a>
             <a href="fffffffffff.html#review">review</a>
             <a class="active" href="#order">order</a>
         </nav>
@@ -33,7 +33,7 @@
         <div class="icons">
             <i class="fas fa-bars" id="menu-bars"></i>
             <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
+            
             <a href="cart.html" class="fas fa-shopping-cart" data-toggle="modal" data-target="#cart"></a>
         </div>
 
@@ -71,12 +71,12 @@
         </div> -->
             <div class="inputBox">
                 <div class="input">
-                    <span>how musch loptop you buy </span>
+                    <span>how much Machine you buy </span>
                     <input type="number" placeholder="how many orders">
                 </div>
                 <div class="input">
                     <span>date and time</span>
-                    <input type="datetime-local">
+                    <input type="date">
                 </div>
             </div>
             <div class="inputBox">
@@ -94,13 +94,30 @@
                     <span>Select Payment Method</span>
                     <div class="inputRadioSpan">
                         <input type="radio" name="CashOnDelivery" value="paymentCash" id="paymentCash" />
-                        <label for="paymentCash">Cash On Delivery</label>
+                        <label for="paymentCash"> <h1>Cash On Delivery</label></h1>
                     </div>
                 </div>
 
             </div>
             <div class="inputBox">
-                <input type="submit" value="order now" class="btn">
+               
+                <a href="fffffffffff.html#home" class="btn" onclick="orderPlacedAlert()">Order Now</a>
+
+<script>
+function orderPlacedAlert() {
+    alert("Your order has been successfully placed. A copy of the bill will be sent to your mobile number shortly.")
+    
+}
+
+
+
+async function redirectToHome(params) {
+    debugger
+   console.log ("ABCD")
+   window.location.href = '/';
+}
+
+</script>
             </div>
         </form>
 
