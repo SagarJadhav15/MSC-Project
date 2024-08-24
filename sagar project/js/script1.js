@@ -122,7 +122,7 @@ The SPS600 also works as a cutter, making it easy to cut packages into the desir
     Keyboard & Battery: Orange Backlit keyboard | 3-Cell Battery, 56WHr| Laptop weight 2.4 Kg
     I/O Ports:1xUSB 3.2 Gen 1 port | 1x USB 2.0 ports | 1x HDMI 2.0 port | 1x SD-card slot | 1x RJ45 port | 1x headset port
     Others :Nahimic 3D audio | Intel Wi-Fi 6 2x2 (Gig+) | Bluetooth 5 |1Yr Premium Support: Onsite Service`,
-    imageSrc: 'images1/sp21.jpg',
+    imageSrc: 'images1/SP22.jpg',
     price: 7390,
     filePath: 'P8.html',
     type: 'product'
